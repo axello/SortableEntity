@@ -23,9 +23,6 @@ public func sortedValues<T:Comparable>(arr: [T]) -> [T] {
     return arr.sorted(by: { (value1, value2) -> Bool in
         return value1 < value2
     })
-//    return arr.sorted(by: { (value1, value2) -> Bool in
-//        return value1 < value2
-//    })
 }
 
 public class SortableEntity : AnyObject, Equatable, Comparable {
@@ -35,6 +32,16 @@ public class SortableEntity : AnyObject, Equatable, Comparable {
     }
 }
 
-extension Array {
-     
-}
+// Probably need some more magic here to be generalised.
+//
+//extension Array {
+//    func sortEntity<T:SortableEntity>() -> Array<T> {
+//        if self.count > 1 {
+//            let item = self[0] as! T
+//            let descriptor = item.sortDescriptor
+//            let arr = self.sorted(by: descriptor)
+//        } else {
+//            return self
+//        }
+//    }
+//}

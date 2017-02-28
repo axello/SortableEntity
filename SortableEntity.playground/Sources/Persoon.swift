@@ -8,15 +8,6 @@
 
 import Foundation
 
-//// Implementation of == required by Equatable
-//public func ==(lhs: Persoon, rhs: Persoon) -> Bool {
-//    return lhs.id == rhs.id
-//}
-//
-//public func <(lhs: Persoon, rhs: Persoon) -> Bool {
-//    return lhs.persoonNaam < rhs.persoonNaam
-//}
-
 
 public class Persoon : SortableEntity {
     
